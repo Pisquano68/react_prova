@@ -27,3 +27,4 @@ console.log("nuovoArray", nuovoArray);
 nuovoArray.push(5);
 
 const altroArray = [...numeri]; //spread operator: copia l'array numeri in un nuovo array
+console.log("ALTRO ARRAY", altroArray);
