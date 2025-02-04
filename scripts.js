@@ -18,3 +18,12 @@ let numeriPari = numeri.filter((numero) => {
 });
 //nota: = singolo è per assegnare un valore
 console.log(numeriPari); // [2, 4]
+
+
+let nuovoArray = numeri;
+console.log("numeri", numeri);
+console.log("nuovoArray", nuovoArray);
+
+nuovoArray.push(5);
+
+const altroArray = [...numeri]; //spread operator: copia l'array numeri in un nuovo array
