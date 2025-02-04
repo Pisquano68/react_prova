@@ -11,3 +11,10 @@ console.log(doppi); // [2, 4, 6]
 let doppi2 = numeri.map((numero) => {
   return numero * 2; //senza return dà unddefined
 });
+
+//metodo filter
+let numeriPari = numeri.filter((numero) => {
+  return numero % 2 === 0;
+});
+
+console.log(numeriPari); // [2]
