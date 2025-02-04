@@ -110,10 +110,30 @@ const dogs = [
     image: 'https://placedog.net/640/480?random',
   },
 ];
-console.log("ESERCIZIO 7");
 
-dogs.forEach((dog) => {
-  document.createElement('div');
-  
+const container = document.getElementById('container');
+const caniImg = document.querySelector('image');
+const caniName = document.querySelector('name');
+const caniBreed = document.querySelector('breed');
 
+
+function creaCard (dogs){
+  const card = document.createElement('div');
+  const cardImg = document.createElement('img');
+  const h2 = document.createElement('h2');
+  const p = document.createElement('p');
+
+  card.className = 'container';
+  cardImg.className = 'image';
+  h2.className = 'name';
+  p.className = 'breed';
+
+  container.appendChild(card);
+  card.appendChild(cardImg);
+  card.appendChild(h2);
+  card.appendChild(p);
+}
+
+dogs.forEach((dogs) => {
+  creaCard();
 });
