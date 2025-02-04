@@ -1,4 +1,4 @@
-let numeri = [1, 2, 3];
+let numeri = [1, 2, 3,4];
 let doppi = [];
 
 numeri.forEach((numero) => {
@@ -14,7 +14,7 @@ let doppi2 = numeri.map((numero) => {
 
 //metodo filter
 let numeriPari = numeri.filter((numero) => {
-  return numero % 2 === 0;
+  return numero % 2 === 0; // il triplo uguale è per confrontare il valore e il tipo
 });
 
-console.log(numeriPari); // [2]
+console.log(numeriPari); // [2, 4]
