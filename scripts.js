@@ -28,3 +28,24 @@ nuovoArray.push(5);
 
 const altroArray = [...numeri]; //spread operator: copia l'array numeri in un nuovo array
 console.log("ALTRO ARRAY", altroArray);
+
+//destrutturazione di un oggetto
+//consente di estrarre valori da un oggetto o da un array e assegnarli a variabili separate
+let persona = {
+    nome: "Mario",
+    cognome: "Rossi",
+};
+
+let { nome, cognome } = persona; //destrutturazione dell'oggetto persona
+
+console.log(nome);
+console.log(cognome);
+
+//destrutturazione di un array
+const frutta = ['mela', 'banana', 'arancia'];
+
+const [prima, seconda, terza] = frutta;
+
+console.log(prima); // Output: mela
+console.log(seconda); // Output: banana
+console.log(terza); // Output: arancia
