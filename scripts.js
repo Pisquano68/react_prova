@@ -44,6 +44,7 @@ console.log(cognome);
 //destrutturazione di un array
 const frutta = ['mela', 'banana', 'arancia'];
 
+//se un elemento non è definito non lo prende
 const [prima, seconda, terza] = frutta;
 
 console.log(prima); // Output: mela
