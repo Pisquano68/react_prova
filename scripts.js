@@ -16,5 +16,5 @@ let doppi2 = numeri.map((numero) => {
 let numeriPari = numeri.filter((numero) => {
   return numero % 2 === 0; // il triplo uguale è per confrontare il valore e il tipo
 });
-
+//nota: = singolo è per assegnare un valore
 console.log(numeriPari); // [2, 4]
