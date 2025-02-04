@@ -111,7 +111,8 @@ const dogs = [
   },
 ];
 
-const container = document.getElementById('container');
+const body = document.querySelector('body');
+const container = document.querySelector('container');
 const caniImg = document.querySelector('image');
 const caniName = document.querySelector('name');
 const caniBreed = document.querySelector('breed');
@@ -128,12 +129,13 @@ function creaCard (dogs){
   h2.className = 'name';
   p.className = 'breed';
 
+  body.appendChild(container);
   container.appendChild(card);
   card.appendChild(cardImg);
   card.appendChild(h2);
   card.appendChild(p);
 }
 
-dogs.forEach((dogs) => {
-  creaCard();
+dogs.forEach((dog) => {
+  creaCard(dog);
 });
