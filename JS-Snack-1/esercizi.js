@@ -118,7 +118,7 @@ const caniName = document.querySelector('name');
 const caniBreed = document.querySelector('breed');
 
 
-function creaCard (dogs){
+function creaCard (dog){
   const card = document.createElement('div');
   const cardImg = document.createElement('img');
   const h2 = document.createElement('h2');
@@ -128,6 +128,7 @@ function creaCard (dogs){
   cardImg.className = 'image';
   h2.className = 'name';
   p.className = 'breed';
+
 
   body.appendChild(container);
   container.appendChild(card);
